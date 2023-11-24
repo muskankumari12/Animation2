@@ -7,8 +7,8 @@ body {
   background-color: white;
   height: 300px;
   width: 300px;
-  border-bottom-left-radius: 150px;
-  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 140px;
+  border-bottom-right-radius: 140px;
   /* border-top-left-radius: 20px;
   border-top-right-radius: 30px; */
 
@@ -43,4 +43,17 @@ body {
   top: -25px;
   border-radius: 50%;
   background-color: rgb(192, 153, 102);
+}
+.handle {
+  position: absolute;
+  height: 120px;
+  width: 150px;
+  top: 40px;
+  right: -90px;
+  border: solid 20px white;
+  /* margin-left: 300px; */
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  transform: rotate(54deg);
+  border-radius: 50%;
 }
