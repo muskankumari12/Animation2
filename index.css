@@ -35,3 +35,12 @@ body {
   /* background-color: rgb(248, 249, 250); */
   border-radius: 50%;
 }
+.tea {
+  position: absolute;
+  height: 50px;
+  width: calc(100% - 20px);
+  left: 10px;
+  top: -25px;
+  border-radius: 50%;
+  background-color: rgb(192, 153, 102);
+}
