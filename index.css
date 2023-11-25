@@ -1,5 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: rgb(117, 121, 172);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
 }
 .cup {
   position: relative;
@@ -22,32 +33,35 @@ body {
   width: 100%;
   /* background-color: white; */
   border-radius: 50%;
-  background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+  background-color: white;
+  /* background: linear-gradient(to right, #f9f9f9, #d9d9d9); */
 }
 .circle {
   position: absolute;
-  height: 50px;
-  width: calc(100% - 20px);
-  left: 10px;
-  top: -25px;
-  background: linear-gradient(to left, #f9f9f9, #d9d9d9);
+  height: 90px;
+  width: calc(100% - 9px);
+  left: 5px;
+  top: 2px;
+  background: linear-gradient(to right, #f9f9f9, #d9d9d9);
 
   /* background-color: rgb(248, 249, 250); */
   border-radius: 50%;
+  overflow: hidden;
 }
 .tea {
   position: absolute;
-  height: 50px;
-  width: calc(100% - 20px);
+  height: 100%;
+  width: 100%;
   left: 10px;
-  top: -25px;
+  top: 40px;
   border-radius: 50%;
+  box-sizing: border-box;
   background-color: rgb(192, 153, 102);
 }
 .handle {
   position: absolute;
-  height: 120px;
-  width: 150px;
+  height: 160px;
+  width: 190px;
   top: 40px;
   right: -90px;
   border: solid 20px white;
@@ -57,3 +71,112 @@ body {
   transform: rotate(54deg);
   border-radius: 50%;
 }
+.plate {
+  position: absolute;
+
+  background: linear-gradient(to right, white, rgb(241, 235, 235));
+  height: 200px;
+  width: 500px;
+  bottom: -50px;
+  left: 50px;
+  transform: translateX(10%);
+  border-radius: 50%;
+}
+.plate::befor {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  background: linear-gradient(#f9f9f9, #e7e7e7);
+}
+.plate::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  background: radial-gradient(rgba(0,0,0,0.04) 25%, transparent);
+  border-radius: 50%;
+}
+
+.vapour{
+  position: relative;
+  display: flex;
+  z-index:1;
+  padding: 0 20px;
+}
+.vapour span{
+  position: relative;
+  bottom: 50px;
+  display: block;
+  margin: 0 2px 50px;
+  min-width: 8px;
+  height:120px;
+  background:#fff;
+  border-radius: 50%;
+  animation: animation 5s liner infinte ;
+
+}
+@keyframes animation{
+  0%{
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+}
+15%{
+  opacity: 1;
+}
+
+50%{
+  transform: translateY(-150px) scaleX(5);
+}
+100%{
+  transform: translateY(0) scaleX(10);
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
