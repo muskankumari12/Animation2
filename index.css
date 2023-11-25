@@ -118,10 +118,10 @@ body {
   height:120px;
   background:#fff;
   border-radius: 50%;
-  animation: animation 5s liner infinte ;
+  animation: anime 5s ease infinte ;
 
 }
-@keyframes animation{
+@keyframes anime{
   0%{
     transform: translateY(0) scaleX(1);
     opacity: 0;
@@ -133,8 +133,11 @@ body {
 50%{
   transform: translateY(-150px) scaleX(5);
 }
+95%{
+  opacity: 0;
+}
 100%{
-  transform: translateY(0) scaleX(10);
+  transform: translateY(-300px) scaleX(10);
 }
 
 
